@@ -1,3 +1,6 @@
+.resume{
+  color: #fff;
+}
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -31,7 +34,12 @@
   font-weight: 600;
   margin-bottom: 10px;
 }
-
+.resume .resume-item a{
+  color: #fff;
+}
+.resume .resume-item a:hover{
+  color: #a94dc5;
+}
 .resume .resume-item ul {
   padding-left: 20px;
 }
