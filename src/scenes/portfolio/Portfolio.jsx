@@ -1,3 +1,4 @@
+import './Portfolio.css'
 import Header from "../global/Header";
 const Portfolio = () => {
   return (

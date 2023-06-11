@@ -1,3 +1,4 @@
+import './Contact.css'
 import Header from "../global/Header";
 const Contact = () => {
   return (

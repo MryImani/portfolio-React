@@ -1,3 +1,4 @@
+import './Resume.css'
 import Header from "../global/Header";
 const Resume = () => {
   return (
