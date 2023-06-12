@@ -27,6 +27,15 @@
 .skills .progress-bar {
   width: 1px;
   height: 10px;
-  transition: 0.9s;
+  animation: progressAnimate 5s ease-in-out;
   background-color: #a94dc5;
+}
+
+@keyframes progressAnimate {
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
 }
