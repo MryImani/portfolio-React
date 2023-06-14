@@ -5,16 +5,16 @@ const Resume = () => {
   return (
     <div>
       <Header section="resume" />
-      <div id="resume" class="section resume">
-        <div class=" container">
-          <div class="section-title">
+      <div id="resume" className="section resume">
+        <div className=" container">
+          <div className="section-title">
             <h2>Resume</h2>
             <p>Check My Resume</p>
           </div>
 
-          <div class="row">
-            <div class="col-lg-6">
-              <h3 class="resume-title">Sumary</h3>
+          <div className="row">
+            <div className="col-lg-6">
+              <h3 className="resume-title">Sumary</h3>
               <ResumeItem title="Maryam Imani">
                 <p>
                   <em>
@@ -33,14 +33,14 @@ const Resume = () => {
                   </ul>
                 </p>
               </ResumeItem>
-              <h3 class="resume-title">Education</h3>
+              <h3 className="resume-title">Education</h3>
               <ResumeItem title="Bachelor's degree in Computer Engineering">
                 <h5>2010 - 2014</h5>
                 <p>
                   <em>University of Bojnord - Bojnord,Iran</em>
                 </p>
               </ResumeItem>
-              <h3 class="resume-title">Certifications and Licenses</h3>
+              <h3 className="resume-title">Certifications and Licenses</h3>
               <ResumeItem title="Web Developer">
                 <p>
                   <ul>
@@ -67,7 +67,7 @@ const Resume = () => {
                   </ul>
                 </p>
               </ResumeItem>
-              <h3 class="resume-title">Links</h3>
+              <h3 className="resume-title">Links</h3>
               <ResumeItem title="">
                 <p>
                   <ul>
@@ -95,8 +95,8 @@ const Resume = () => {
                 </p>
               </ResumeItem>
             </div>
-            <div class="col-lg-6">
-              <h3 class="resume-title">Professional Experience</h3>
+            <div className="col-lg-6">
+              <h3 className="resume-title">Professional Experience</h3>
               <ResumeItem title="Web Developer">
                 <h5>2021 - 2022</h5>
                 <p>
