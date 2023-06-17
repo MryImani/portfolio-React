@@ -1,4 +1,5 @@
-import './Header.css'
+import { useState } from "react";
+import "./Header.css";
 import { Link } from "react-router-dom";
 import { IconButton } from "@mui/material";
 import {
@@ -7,10 +8,19 @@ import {
   LinkedIn,
   Instagram,
   Portrait,
+  DensityMedium,
 } from "@mui/icons-material";
+
 const Header = (props) => {
+  const [toggleNavbar, setToggleNavbar] = useState(false);
+  const toggleNav = () => {
+    setToggleNavbar(!toggleNavbar);
+  };
   return (
-    <header id="header" className={props.section !== "home" ? "header-top" : ""}>
+    <header
+      id="header"
+      className={props.section !== "home" ? "header-top" : ""}
+    >
       <div className="container">
         <h1>
           <Link to="/">Maryam Imani</Link>
@@ -19,7 +29,10 @@ const Header = (props) => {
           I'm a passionate <span>front-end developer</span> from Iran
         </h2>
 
-        <nav id="navbar" className="navbar">
+        <nav
+          id="navbar"
+          className={toggleNavbar ? "navbar navbar-mobile" : "navbar"}
+        >
           <ul>
             <li>
               <Link
@@ -72,7 +85,9 @@ const Header = (props) => {
               </Link>
             </li>
           </ul>
-          <i className="bi bi-list mobile-nav-toggle"></i>
+          <span className="mobile-nav-toggle" onClick={toggleNav}>
+            <DensityMedium />
+          </span>
         </nav>
 
         <div class="social-links">
