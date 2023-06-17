@@ -31,7 +31,7 @@ const Header = (props) => {
 
         <nav
           id="navbar"
-          className={toggleNavbar ? "navbar navbar-mobile" : "navbar"}
+          className={toggleNavbar ? "navbar-mobile" : "navbar"}
         >
           <ul>
             <li>
